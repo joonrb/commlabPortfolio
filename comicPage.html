@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Normalcy Test!</title>
+        <link rel="stylesheet" href="comicStyle.css">
+    </head>
+    <body id="body">
+        <div class="wth">
+            <p1 class="description">Scroll Horizontally to read the comic!</p1>
+        </div>
+            <div class="container">
+            <img src="Frame 1.png" class="comic">
+        </div>
+        <a href="https://joonrb.github.io/interactiveComic/">
+            <img src="book.png" id="bookStatic">
+            <img src="bookGif.gif" id="bookGif">
+        </a>
+        <img src="circle.png" class="circle">
+        <div class="theRest">
+            <p1 class="text">For the interactive comic assignment, we decided to make a personality test kind of comic
+                where we give four typical NYUAD campus situations and provide few options the users can check out.
+                The result/conclusion of the comic is that there is no such thing as "normal" person and everyone is
+                unique in their own way!
+            </p1>
+        </div>
+        <p1 id="note">#Demo Version!</p1>
+        <img src="arrow.png" id="arrowLeft" onclick="goToPrevPage()">
+        <img src="arrow.png" id="arrowRight" onclick="goToNextPage()">
+        <script>
+            var audio = new Audio("Page Turn.mp3");
+            function goToNextPage() {
+                audio.currentTime = 0;
+                audio.play();
+                let body = document.getElementById("body");
+                body.className = "body-fade-out";
+                setTimeout(function () { window.location.assign("soundPage.html"); }, 1*1000);
+            }
+    
+            function goToPrevPage() {
+                audio.currentTime = 0;
+                audio.play();
+                let body = document.getElementById("body");
+                body.className = "body-fade-out";
+                setTimeout(function () { window.location.assign("websitePage.html"); }, 1*1000);
+            }
+        </script>
+    </body>
+</html>
