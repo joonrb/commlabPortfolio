@@ -70,6 +70,9 @@ body{
 
 
 .msTitle{
+    position: absolute;
+    top: 10%;
+    right 20%;
     font-family: "Bradley Hand ITC";
     font-size: 33px;
 
