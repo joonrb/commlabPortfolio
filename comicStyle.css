@@ -128,3 +128,28 @@ body{
 #arrowRight:hover{
     transform: scale(1.1) rotate(180deg);
 }
+
+.ai{
+    height: 20%;
+    width: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.ps{
+    height: 20%;
+    width: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+.lastText{
+    font-family: "Bradley Hand ITC";
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+}
