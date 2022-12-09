@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("1.jpg");
+}
+
+#bodyBig{
+    display: flex;
+}
+
+.body-fade-out { animation-name: notebook-fade-out; animation-duration: 1.0s; animation-fill-mode: forwards; }
+@keyframes notebook-fade-out { from { opacity: 1 } to { opacity: 0; } }
+
+
+.flex-child{
+    flex: 1;
+}
+
+#left{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    margin-top: 3%;
+    margin-left: 9%;
+    /*border-color: black;
+    border: 3px solid;*/
+    width: 40%;
+    height: auto;
+}
+
+#right{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /*border: 3px solid;*/
+    width: 40%;
+    height: 10000%;   
+    margin-top: 3%;
+    margin-right: 8%;
+    margin-left: 1%;
+    justify-content: center;
+}
+
+#photo{
+    flex-basis: 100%;
+    width: 45%;
+    height: 25%;
+    margin: 0;
+}
+
+
+#poster{
+    height: 300px;
+    width: auto;
+    margin-top: 8%;
+}
+
+.description1{
+    font-family: "Bradley Hand ITC";
+    font-size: 20px;
+    font-weight: bold;
+    width: 60%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+
+.msTitle{
+    font-family: "Bradley Hand ITC";
+    font-size: 33px;
+
+    margin: 1px;
+}
+
+#ms1{
+    width: auto;
+    height: 180px;
+    margin: 1%;
+}
+
+#ms2{
+    width: auto;
+    height: 180px;
+    margin: 1%;
+}
+
+#ms3{
+    width: auto;
+    height: 180px;
+    margin: 1%;
+}
+
+#websiteButton{
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+    transition: transform .2s;
+}
+
+#websiteButton:hover{
+    transform: scale(1.3);  
+}
+
+#arrowLeft{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 0.5%;
+    transition: transform .2s;
+}
+
+#arrowRight{
+    transition: transform .2s;
+    width: auto;
+    height: 100px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 45%;
+    right: 0.5%;
+}
+
+#arrowLeft:hover{
+    transform: scale(1.1);
+}
+
+#arrowRight:hover{
+    transform: scale(1.1) rotate(180deg);
+}

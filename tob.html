@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Table of Contents</title>
+        <link rel="stylesheet" href="tobStyle.css">
+    </head>
+    <body id="body">
+    <h1>Table of Contents</h1>
+    <div class="container">
+        <a href="websitePage.html">
+            <img src="hamadMenu.png" class="hamadMenu">
+        </a>
+        <a href="comicPage.html">    
+            <img src="comicMenu.png" class="comicMenu">
+        </a>
+        <a href="soundPage.html">
+            <img src="soundMenu.png" class="soundMenu">
+        </a>
+        <a href="videoPage.html">
+            <img src="rascalsMenu.png" class="rascalsMenu">
+        </a>
+    </div>
+    <img src="redBrush.png" class="redBrush">
+    <img src="blueBrush.png" class="blueBrush">
+
+    <h1 class="instOne">Click the Sticky Notes to Move to That Page!</h1>
+
+    <h1 class="instTwo">Click the Arrows to Flip to Next or Back Page!</h1>
+    
+    <img src="arrow.png" id="arrowLeft" onclick="goToPrevPage()"/>
+    <img src="arrow.png" id="arrowRight" onclick="goToNextPage()"/>
+
+
+    <script>
+		var audio = new Audio("Page Turn.mp3");
+		function goToNextPage() {
+			audio.currentTime = 0;
+			audio.play();
+			let body = document.getElementById("body");
+			body.className = "body-fade-out";
+			setTimeout(function () { window.location.assign("websitePage.html"); }, 1*1000);
+		}
+
+        function goToPrevPage() {
+			audio.currentTime = 0;
+			audio.play();
+			let body = document.getElementById("body");
+			body.className = "body-fade-out";
+			setTimeout(function () { window.location.assign("index.html"); }, 1*1000);
+		}
+	</script>
+    </body>
+</html>

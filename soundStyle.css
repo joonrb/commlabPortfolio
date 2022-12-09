@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: url("1.jpg");
+    overflow-y: hidden;
+}
+
+.body-fade-out { animation-name: notebook-fade-out; animation-duration: 1.0s; animation-fill-mode: forwards; }
+@keyframes notebook-fade-out { from { opacity: 1 } to { opacity: 0; } }
+
+
+#miniWeb{
+    margin: 10%;
+    margin-top: 25px;
+    width: 700px;
+    height: 600px;
+    border: none;
+    border-radius: 20px;
+}
+
+.content{
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    width: 38%;
+
+    transform: rotate(5deg);
+
+    font-family: "Bradley Hand ITC";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button{
+    position: absolute;
+    top: 38%;
+    right: 10%;
+    width: 22%;
+    height: auto;
+    transition: transform .2s;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.title{
+    position: absolute;
+    top: 62%;
+    right: 10%;
+    font-family: "Bradley Hand ITC";
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.script{
+    background-color: #D3D3D3;
+    margin: 10%;
+
+    position: absolute;
+    top: 45%;
+    right: -5%;
+
+    height: 200px;
+    width: 30%;
+
+    overflow-x: hidden;
+    border-style: inset;
+}
+
+.scriptText{
+    font-family: "American Typewriter", serif;
+}
+
+
+#arrowLeft{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 0.5%;
+    transition: transform .2s;
+}
+
+#arrowRight{
+    transition: transform .2s;
+    width: auto;
+    height: 100px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 45%;
+    right: 0.5%;
+}
+
+#arrowLeft:hover{
+    transform: scale(1.1);
+}
+
+#arrowRight:hover{
+    transform: scale(1.1) rotate(180deg);
+}

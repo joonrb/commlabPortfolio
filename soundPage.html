@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fall Break Adventures</title>
+        <link rel="stylesheet" href="soundStyle.css">
+        <link href="https://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+                
+    </head>
+    <body id="body">
+        <iframe src="https://zaid141.github.io/Sound/sound.html#" title="Soundtrack" id="miniWeb"></iframe>
+        <div class="content">
+            <p1>For our sound project, we decided to take the concept of radio show featuring a student going on an adventure
+                to the serengeti safari for their fall break. While the story is fictional, some parts of it are based on what actually
+                happened to some of our peers to show how an average NYUAD student's fall break looks like. 
+            </p1>
+        </div>
+        <a href="https://zaid141.github.io/Sound/sound.html#">
+            <img src="soundButton.png" class="button">
+        </a>
+
+        <p1 class="title">Script for our Radio Show Dialogue!</p1>
+        <div class="script">
+            <p1 class="scriptText">Interviewer: Hello and welcome back to NYUAD radio station, I’m Lukrecija and today we will talk about sharing your craziest fall break experience with Jun Lee here, good afternoon Jun!<br> 
+                <br>
+                Student: Good afternoon Lukrecija! Thanks for inviting me here, it's such an honor!<br>
+                <br>
+                Interviewer: The honor is all mine! Now, I understand that you had a phenomenal experience this past fall break, where did you go and what did you do?<br>
+                <br>
+                Student: Yeah so this past fall break I went to the Serengeti National Park in Tanzania to do my first ever safari tour.<br>
+                <br>
+                Interviewer: Did you travel alone? If not, who did you go with?<br>
+                <br>
+                Student: I actually planned this trip with a friend of mine, but um the thing about this trip begins right off the bat on day 0 because my friend couldn’t make it with me because his visa wasn’t processed.<br>
+                <br>
+                Interviewer: No way, his visa didn’t process? So what happened? You traveled alone?<br>
+                <br>
+                Student: Yeah I ended up traveling alone, first time in Africa, first time going to a safari, heck first time traveling alone too.<br> 
+                <br>
+                Interviewer: So how did you feel as you were doing all this, because you stuck through right?<br>
+                <br>
+                Student: Yeah I did, I did stick through and uh I was nervous, a little stressed, and uh it was really hard to relax and enjoy the trip you know?<br>
+                <br>
+                Interviewer: Yeah I can’t even imagine what you must’ve gone through<br>
+                <br>
+                Student: Thankfully, the weather was nice, the safari tour guides were very nice, the food was delicious, and everything worked out I guess<br>
+                <br>
+                Interviewer: So how was your safari experience?<br>
+                <br>
+                Student: So at first, I was still nervous yeah? I really didn’t know what to expect. For the first 30 minutes we just drove in the park, but soon after I got to see all these beautiful animals, I saw a herd of zebras, bunch of gazelles, and I even saw a couple of elephants too<br> 
+                <br>
+                Interviewer: That sounds crazy! Sounds like you had an amazing time!<br>
+                <br>
+                Student: But here comes the drama though. So we’re driving around, having a good time, and we decide to park in the shade to grab lunch. And while we’re having lunch, a pack of lions approached us from behind apparently. Of course, the guides saw them coming from a mile away, so we get to the jeep again, but it wouldn’t start!<br> 
+                <br>
+                Interviewer: Oh wow! That must be so terrifying! But before we continue, let's take a short advertisement break brought to you by hamad milkshake!<br>
+                <br>
+                (Advertisement) Hamad Milkshake! So fresh! So good! Drink and become a Hamad! Get one from your local Hamad Milkshake store or the online website!<br>
+                <br>
+                Interviewer: Aaand we’re back! So what ended up happening? I mean you’re here in one piece at the moment<br>
+                <br>
+                Student: Yeah thankfully So what happened was, the lions got super close, like a little more than you and me right now close, but fortunately the engines started working again so the driver hit it and we got out of there.<br>
+                <br>
+                Interviewer: Sounds like you had more than enough excitement back there<br>
+                <br>
+                Student: No kidding I was so scared, I could even hear my own heartbeat. So after that surprise event, we cruised around a little more and guess what happened? We ran into this very rare bird called the lilac-breasted roller! It was so small yet so beautiful, it looked like it was made out of rainbow!<br>
+                <br>
+                Interviewer: Sounds awesome! Did you manage to take a pic of it?<br>
+                <br>
+                Student: I actually did! Got it right here can you see it!<br>
+                <br>
+                Interviewer: It does look amazing! It has red to orange fade color in the chest, overall blue colored feathers but the wing has a touch of skyblue fade as well! A small but very colorful and beautiful bird!<br>
+                <br>
+                Student: Anyways after that I safely got back to the air bnb and then flew back to campus and here I am now!<br>
+                <br>
+                Interviewer: Sounds like a heck of a fall break travel there <br>
+                <br>
+                Student: Yeah it was definitely something<br>
+                <br>
+                Interviewer: Would love to ask you more about it but I think we ran out of time. Thank you Jun for sharing you stories with us, and thanks to everyone for listening to the NYUAD student radio station, and stay tuned for next week for our new topic of midterms: have the professors truly gone mad?<br>
+                </p1>
+        </div>
+        <img src="arrow.png" id="arrowLeft" onclick="goToPrevPage()">
+        <img src="arrow.png" id="arrowRight" onclick="goToNextPage()">
+
+        <script>
+            var audio = new Audio("Page Turn.mp3");
+            function goToNextPage() {
+                audio.currentTime = 0;
+                audio.play();
+                let body = document.getElementById("body");
+                body.className = "body-fade-out";
+                setTimeout(function () { window.location.assign("videoPage.html"); }, 1*1000);
+            }
+    
+            function goToPrevPage() {
+                audio.currentTime = 0;
+                audio.play();
+                let body = document.getElementById("body");
+                body.className = "body-fade-out";
+                setTimeout(function () { window.location.assign("comicPage.html"); }, 1*1000);
+            }
+        </script>
+    </body>
+</html>

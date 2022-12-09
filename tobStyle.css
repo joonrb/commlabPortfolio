@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("1.jpg");
+}
+
+.body-fade-out { animation-name: notebook-fade-out; animation-duration: 1.0s; animation-fill-mode: forwards; }
+@keyframes notebook-fade-out { from { opacity: 1 } to { opacity: 0; } }
+
+.container{
+    margin-left: 12%;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.hamadMenu{
+    height: 250px;
+    width: 250px;
+    margin-right: 5%;
+    transition: transform .2s;
+    
+}
+
+.hamadMenu:hover{
+    transform:scale(1.5);
+}
+
+.comicMenu{
+    height: 250px;
+    width: 250px;
+    transition: transform .2s;
+}
+
+.comicMenu:hover{
+    transform:scale(1.5);
+}
+
+.soundMenu{
+    height: 250px;
+    width: 250px;
+    margin-right: 5%;
+    transition: transform .2s;
+}
+
+.soundMenu:hover{
+    transform:scale(1.5);
+}
+
+.rascalsMenu{
+    height: 250px;
+    width: 250px;
+    transition: transform .2s;
+}
+
+.rascalsMenu:hover{
+    transform:scale(1.5);
+}
+
+h1{
+    font-family: "Bradley Hand ITC";
+    font-size: 33px;
+    margin: 3%;
+    margin-left: 10%
+}
+
+.redBrush{
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    right: 30%;
+}
+
+.instOne{
+    position: absolute;
+    top: 22%;
+    right: 0%;
+    transform: rotate(3deg);
+}
+
+.instTwo{
+    position: absolute;
+    width: 25%;
+    top: 65%;
+    right: 20%;
+    transform: rotate(-8deg);
+}
+
+.blueBrush{
+    position: absolute;
+    width: 30%;
+    top: 55%;
+    right: 5%;
+}
+
+#arrowLeft{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 0.5%;
+    transition: transform .2s;
+}
+
+#arrowRight{    
+    width: auto;
+    height: 100px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 45%;
+    right: 0.5%;
+    transition: transform .2s;
+}
+
+#arrowLeft:hover{
+    transform: scale(1.1);
+}
+
+#arrowRight:hover{
+    transform: scale(1.1) rotate(180deg);
+}
