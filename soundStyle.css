@@ -29,14 +29,14 @@ html{
 
 .content{
     position: absolute;
-    top: 12%;
-    right: 3%;
-    width: 38%;
+    top: 65%;
+    left: 5%;
+    width: 50%;
 
     transform: rotate(5deg);
 
     font-family: "Bradley Hand ITC";
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 600;
 }
 
