@@ -7,6 +7,11 @@
 body{
     background-image: url("1.jpg");
     overflow-y: hidden;
+    height: 100%;
+}
+
+html{
+    height: 100%;
 }
 
 .body-fade-out { animation-name: notebook-fade-out; animation-duration: 1.0s; animation-fill-mode: forwards; }
@@ -16,8 +21,8 @@ body{
 #miniWeb{
     margin: 10%;
     margin-top: 25px;
-    width: 700px;
-    height: 600px;
+    width: 50%;
+    height: 50%;
     border: none;
     border-radius: 20px;
 }
