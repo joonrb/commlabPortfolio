@@ -25,7 +25,7 @@ body{
     margin: 10%;
     margin-top: 2%;
     height: 10%;
-    width: 37%;
+    width: 44%;
     overflow: hidden;
     overflow-x: scroll;
     border: 10px ridge #5C4033;
@@ -38,21 +38,22 @@ body{
 }
 
 .comic{
-    height: 330px;
+    height: 600px;
 }
 
 .theRest{
     float: right;
     width: 40%;
-    margin-top: -80px;
-    margin-right: 8%;
+    position: absolute;
+    right: 5%;
+    top: 58%;
     transform: rotate(-5deg);
 }
 
 #bookStatic{
     position: absolute;
-    right: 20%;
-    top: 20%;
+    right: 15%;
+    top: 10%;
     height: 15%;
     width: 15%;
 }
@@ -64,8 +65,8 @@ body{
 
 #bookGif{
     position: absolute;
-    right: 20%;
-    top: 20%;
+    right: 15%;
+    top: 10%;
     opacity: 0;
     height: 15%;
     width: 15%;
@@ -81,13 +82,13 @@ body{
     width: 25%;
     height: auto;
 
-    top:35%;
-    right: 25%;
+    top: 25%;
+    right: 20%;
 }
 
 .text{
     font-family: "Bradley Hand ITC";
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -96,9 +97,9 @@ body{
     font-size: 25px;
     font-weight: 600;
     position: absolute;
-    bottom: 28%;
-    left: 12%;
-    transform: rotate(-8deg);
+    top: 5%;
+    left: 45%;
+    transform: rotate(8deg);
 }
 
 #arrowLeft{
