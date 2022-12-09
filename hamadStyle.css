@@ -19,89 +19,74 @@ body{
     flex: 1;
 }
 
-#left{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
-    margin-top: 3%;
-    margin-left: 9%;
-    /*border-color: black;
-    border: 3px solid;*/
-    width: 40%;
-    height: auto;
-}
-
-#right{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    /*border: 3px solid;*/
-    width: 40%;
-    height: 10000%;   
-    margin-top: 3%;
-    margin-right: 8%;
-    margin-left: 1%;
-    justify-content: center;
-}
-
 #photo{
-    flex-basis: 100%;
+    
     width: 45%;
     height: 25%;
-    margin: 0;
+    margin-left: 5%;
+    margin-top: 5%
 }
 
 
 #poster{
+    position: absolute;
     height: 300px;
     width: auto;
-    margin-top: 8%;
+    top: 30%;
+    left: 5%;
 }
 
 .description1{
     font-family: "Bradley Hand ITC";
     font-size: 20px;
     font-weight: bold;
-    width: 60%;
-    margin-top: 8%;
-    margin-left: 5%;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
 }
 
 
 .msTitle{
-    position: absolute;
-    top: 10%;
-    right 20%;
     font-family: "Bradley Hand ITC";
     font-size: 33px;
-
-    margin: 1px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
 #ms1{
     width: auto;
-    height: 180px;
-    margin: 1%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    right: 35%;
 }
 
 #ms2{
     width: auto;
-    height: 180px;
-    margin: 1%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
 }
 
 #ms3{
     width: auto;
-    height: 180px;
-    margin: 1%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
 }
 
 #websiteButton{
-    width: 90%;
+    width: 40%;
     height: auto;
     margin-top: 10%;
     transition: transform .2s;
+    position: absolute;
+    top: 40%;
+    right: 10%;
 }
 
 #websiteButton:hover{
