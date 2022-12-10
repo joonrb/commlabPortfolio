@@ -147,9 +147,9 @@ body{
 
 #lastText{
     font-family: "Bradley Hand ITC";
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     position: absolute;
-    bottom: 20%;
-    left: 20%;
+    bottom: 35%;
+    left: 14%;
 }
