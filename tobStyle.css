@@ -78,23 +78,23 @@ h1{
 .instOne{
     position: absolute;
     top: 22%;
-    right: 0%;
+    right: 5%;
     transform: rotate(3deg);
 }
 
 .instTwo{
     position: absolute;
     width: 25%;
-    top: 65%;
-    right: 20%;
+    top: 63%;
+    right: 15%;
     transform: rotate(-8deg);
 }
 
 .blueBrush{
     position: absolute;
     width: 30%;
-    top: 55%;
-    right: 5%;
+    top: 50%;
+    right: 0%;
 }
 
 #arrowLeft{
