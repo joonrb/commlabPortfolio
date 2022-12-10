@@ -35,7 +35,7 @@ html{
 
     transform: rotate(5deg);
 
-    font-family: "Bradley Hand ITC";
+    font-family: "Bradley Hand";
     font-size: 40px;
     font-weight: 600;
 }
@@ -57,7 +57,7 @@ html{
     position: absolute;
     top: 62%;
     right: 10%;
-    font-family: "Bradley Hand ITC";
+    font-family: "Bradley Hand";
     font-size: 22px;
     font-weight: 900;
 }
