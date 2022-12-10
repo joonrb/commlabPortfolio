@@ -16,7 +16,7 @@ body{
 }
 
 .description{
-    font-family: "Bradley Hand ITC";
+    font-family: "Bradley Hand";
     font-size: 30px;
     font-weight: bold;
 }
@@ -87,13 +87,13 @@ body{
 }
 
 .text{
-    font-family: "Bradley Hand ITC";
+    font-family: "Bradley Hand";
     font-size: 30px;
     font-weight: 600;
 }
 
 #note{
-    font-family: "Bradley Hand ITC";
+    font-family: "Bradley Hand";
     font-size: 25px;
     font-weight: 600;
     position: absolute;
@@ -146,7 +146,7 @@ body{
 }
 
 #lastText{
-    font-family: "Bradley Hand ITC";
+    font-family: "Bradley Hand";
     font-size: 25px;
     font-weight: 600;
     position: absolute;
